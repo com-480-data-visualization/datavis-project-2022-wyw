@@ -40,23 +40,23 @@ Please, fill the following sections about your project.
 > - What others have already done with the data?
 
 1. Predicting Artist from Artwork
-* [WebApp](https://github.com/SupratimH/deepartist-web-application)
-* [Classification Model](https://github.com/raunit-x/Best-Artworks-of-All-Time)
+    * [WebApp](https://github.com/SupratimH/deepartist-web-application)
+    * [Classification Model](https://github.com/raunit-x/Best-Artworks-of-All-Time)
 2. Analyzing Painters' Age
 
-[Data Visualization Focusing on Age](https://www.kaggle.com/code/nidaguler/data-visualization-best-artworks-of-all-time)
+    [Data Visualization Focusing on Age](https://www.kaggle.com/code/nidaguler/data-visualization-best-artworks-of-all-time)
 
 3. Generating Art
 
-[GAN for Artwork Generation](https://www.kaggle.com/code/isaklarsson/gan-art-generator)
+    [GAN for Artwork Generation](https://www.kaggle.com/code/isaklarsson/gan-art-generator)
 
 4. Style Transfer
 
-[Reconstructing Images in the Style of Another Image](https://www.kaggle.com/code/basu369victor/style-transfer-deep-learning-algorithm)
+    [Reconstructing Images in the Style of Another Image](https://www.kaggle.com/code/basu369victor/style-transfer-deep-learning-algorithm)
 
 > - Why is your approach original?
 
-We provide a more comprehensive and interactive guide into the artworks of the 50 most influential artists of all time. By browsing through our website, people can not only familiarize themseleves with various painters and genres through collections of artworks, but also learn visually how painting styles have evolved throughout a paticular painter's life and how artworks in general have evolved throughout history. To make it interactive, people can not only choose the painters or genres they want to inspect more closely, but also test their knowledge by guessing the painters of images and transfer their own photos to the style of their favourite artworks. 
+  We provide a more comprehensive and interactive guide into the artworks of the 50 most influential artists of all time. By browsing through our website, people can not only familiarize themseleves with various painters and genres through collections of artworks, but also learn visually how painting styles have evolved throughout a paticular painter's life and how artworks in general have evolved throughout history. To make it interactive, people can not only choose the painters or genres they want to inspect more closely, but also test their knowledge by guessing the painters of images and transfer their own photos to the style of their favourite artworks. 
 
 > - What source of inspiration do you take? Visualizations that you found on other websites or magazines (might be unrelated to your data).
 
