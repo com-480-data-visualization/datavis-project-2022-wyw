@@ -17,7 +17,7 @@ The dataset we choose to use is Best Artworks of All Time, which can be found in
 * images.zip: A file contains all paintings of each artists. All images are full size and divided in corresponding folders and sequentially numbered
 * resized.zip: Same work with images.zip but images have been resized and extracted from folder structure. Images in this file have smaller size which allow us to process model faster
 
-Considering the preprocessing, the image.zip and resized.zip are colllections of images, only the artists.csv has one name garbled, all of them are very clean and don't need much preprocessing. 
+Considering the preprocessing, the image.zip contains 51 folders and we find two folders are repeatitive. So we need to delete the duplicated folder. The other two files resized.zip and artists.csv are very clean and don't need much preprocessing. 
 
 
 ### Problematic
