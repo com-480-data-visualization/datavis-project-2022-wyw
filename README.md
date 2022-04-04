@@ -58,7 +58,7 @@ All the axis we mention above could be solved by developing successful neural ne
 
 > - Why is your approach original?
 
-   We provide a more comprehensive and interactive guide into the artworks of the 50 most influential artists of all time. By browsing through our website, people can not only familiarize themseleves with various painters and genres through collections of artworks, but also learn visually how painting styles have evolved throughout a paticular painter's life and how artworks in general have evolved throughout history. To make it interactive, people can not only choose the painters or genres they want to inspect more closely, but also test their knowledge by guessing the painters of images and transfer their own photos to the style of their favourite artworks. 
+   We provide a more comprehensive and interactive guide into the artworks of 30 influential artists. By browsing through our website, people can not only familiarize themseleves with various painters and styles through collections of artworks, but also learn visually how painting styles have evolved throughout a paticular painter's life and how artworks in general have evolved throughout history. To make it interactive, people can not only choose the painters or styles they want to inspect more closely, but also test their knowledge by guessing the painters of images and transfer their own photos to the style of their favourite artworks. 
 
 > - What source of inspiration do you take? Visualizations that you found on other websites or magazines (might be unrelated to your data).
 
