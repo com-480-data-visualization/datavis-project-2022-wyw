@@ -13,9 +13,9 @@
 ### Dataset
 
 The dataset we choose to use is Best Artworks of All Time, which can be found in https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time. The dataset collect artworks of the 50 most influential painters of all time, and associated with basic information retrieved from wikipedia. In detail, this collection contains 3 files:
-* artists.csv: Basic information of each painter, including name, years, gendre, nationnality, bio, wikipedia and paintings
-* images.zip: All artists' paintings (full size), divided in folders and sequentially numbered
-* resized.zip: Same work with images.zip but images have been resized and extracted from folder structure (This file allows us to process model faster)
+* artists.csv: A file contains basic information of the 50 most famous painter, including their names, years, gendres, nationnalities, bios, wikipedia links and paintings
+* images.zip: A file contains all paintings of each artists. All images are full size and divided in corresponding folders and sequentially numbered
+* resized.zip: Same work with images.zip but images have been resized and extracted from folder structure. Images in this file have smaller size which allow us to process model faster
 
 Considering the preprocessing, the image.zip and resized.zip are colllections of images, only the artists.csv has one name garbled, all of them are very clean and don't need much preprocessing. 
 
@@ -25,9 +25,11 @@ Considering the preprocessing, the image.zip and resized.zip are colllections of
 Painting is an important form in the visual arts, it can be used to communicate ideas, create a sense of beauty, explore the nature of perception, or express strong emotions. By appreciating painting, we can enrich our spirituality, acquire knowledge and inspiration, discover a vivid history and so on. In conclusion, appreciating painting can be very helpful. However, many person are layman of art and don't know how to start the artistic journey. The motivation of this project is to give them basic knowledge of analyzing the artist and their work by exploring the implicit data inside the pictures.
 
 The main axis we want to develop are stated as following:
-* Recognizing the correct artist of paintings: By analyzing the colors used and the geometric patterns inside the pictures, we can indentify the artists own special style and speculate the corresponding painter of a picture.
-* Exploring the relationship between different artists in same gendre:
-* Transfering a picture to different gendre:By reconstructing images in the style of another gendre, we could transfer a picture to any gendre we liked. Or we could make pictures look more artistic by adding different filters.
+* Recognizing the correct artist of paintings: By analyzing the colors used and the geometric patterns inside the pictures, we want to indentify the artists own special style and speculate the corresponding painter of a picture
+* Exploring the relationship between different artists in same gendre: By exploring the connections between paintings within the same gendre, we want to summarize their similarity and learn more about each gendre 
+* Transfering a picture to different gendre: By reconstructing images in the style of another gendre, we want to transfer a picture to any gendre we liked, or make pictures look more artistic by adding different filters
+
+All the axis we mention above could be solved by developing successful neural networks. 
 
 ### Exploratory Data Analysis
 
