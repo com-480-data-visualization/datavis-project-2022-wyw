@@ -10,18 +10,14 @@
 
 ## Milestone 1 
 
-**10% of the final grade**
-
-This is a preliminary milestone to let you set up goals for your final project and assess the feasibility of your ideas.
-Please, fill the following sections about your project.
-
-*(max. 2000 characters per section)*
-
 ### Dataset
 
-> Find a dataset (or multiple) that you will explore. Assess the quality of the data it contains and how much preprocessing / data-cleaning it will require before tackling visualization. We recommend using a standard dataset as this course is not about scraping nor data processing.
->
-> Hint: some good pointers for finding quality publicly available datasets ([Google dataset search](https://datasetsearch.research.google.com/), [Kaggle](https://www.kaggle.com/datasets), [OpenSwissData](https://opendata.swiss/en/), [SNAP](https://snap.stanford.edu/data/) and [FiveThirtyEight](https://data.fivethirtyeight.com/)), you could use also the DataSets proposed by the ENAC (see the Announcements section on Zulip).
+The dataset we choose to use is Best Artworks of All Time, which can be found in https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time. The dataset collect artworks of the 50 most influential painters of all time, and associated with basic information retrieved from wikipedia. In detail, this collection contains 3 files:
+* artists.csv: Basic information of each painter, including name, years, gender, nationnality, bio, wikipedia and paintings
+* images.zip: All artists' paintings (full size), divided in folders and sequentially numbered
+* resized.zip: Same work with images.zip but images have been resized and extracted from folder structure
+
+
 
 ### Problematic
 
