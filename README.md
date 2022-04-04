@@ -24,10 +24,10 @@ Considering the preprocessing, the image.zip and resized.zip are colllections of
 
 Painting is an important form in the visual arts, it can be used to communicate ideas, create a sense of beauty, explore the nature of perception, or express strong emotions. By appreciating painting, we can enrich our spirituality, acquire knowledge and inspiration, discover a vivid history and so on. In conclusion, appreciating painting can be very helpful. However, many person are layman of art and don't know how to start the artistic journey. The motivation of this project is to give them basic knowledge of analyzing the artist and their work by exploring the implicit data inside the pictures.
 
-The main axis we want to develop are stated as following:
-* Recognizing the correct artist of paintings: By analyzing the colors used and the geometric patterns inside the pictures, we want to indentify the artists own special style and speculate the corresponding painter of a picture
-* Exploring the relationship between different artists in same gendre: By exploring the connections between paintings within the same gendre, we want to summarize their similarity and learn more about each gendre 
-* Transfering a picture to different gendre: By reconstructing images in the style of another gendre, we want to transfer a picture to any gendre we liked, or make pictures look more artistic by adding different filters
+The main axis we want to develop in our visualization are stated as following:
+* The special styles of artists in their paintings: By analyzing the colors used and the geometric patterns inside the pictures, we want to indentify the artist own special style and then speculate the corresponding painter of differnet pictures
+* The connections between different artists in same gendre: By exploring the common ground between differnet artists' paintings within the same gendre, we want to summarize their similarity and learn more about each gendre 
+* One picture in different gendres: By reconstructing images in the style of another gendre, we want to transfer a picture to any gendre we liked, or make pictures look more artistic by adding different filters
 
 All the axis we mention above could be solved by developing successful neural networks. 
 
