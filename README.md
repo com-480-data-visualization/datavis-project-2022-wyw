@@ -12,7 +12,7 @@
 
 ### Dataset
 
-The dataset we choose to use is Best Artworks of All Time, which can be found in https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time. The dataset collect artworks of the 50 most influential painters of all time, and associated with basic information retrieved from wikipedia. In detail, this collection contains 3 files:
+The dataset we choose to use is Best Artworks of All Time, which can be found in https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time. The dataset collect artworks of the 50 most influential painters of all time, and associated with basic information of each artists retrieved from wikipedia. In detail, this collection contains 3 files:
 * artists.csv: A file contains basic information of the 50 most famous painter, including their names, years, gendres, nationnalities, bios, wikipedia links and paintings
 * images.zip: A file contains all paintings of each artists. All images are full size and divided in corresponding folders and sequentially numbered
 * resized.zip: Same work with images.zip but images have been resized and extracted from folder structure. Images in this file have smaller size which allow us to process model faster
