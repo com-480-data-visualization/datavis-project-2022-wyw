@@ -19,8 +19,8 @@ The first dataset we choose to use is Best Artworks of All Time, which can be fo
 
 In addition, we want to show some interesting features related with time, which are missing in the first dataset. So we find another dataset Painter by Numbers as a  complement, which can be found in https://www.kaggle.com/competitions/painter-by-numbers. This dataset collects 103250 paintings, including the artist name, creation year, genre, source, style, title and some data used for training model.
 
-Considering the preprocessing, at first we pick up the paingtings the image.zip contains 51 folders and we find two folders are repeatitive. So we need to delete the duplicated folder. The other two files resized.zip and artists.csv are very clean and don't need much preprocessing. 
-
+Considering the preprocessing, at first we pick up the paingtings the image.zip contains 51 folders and we find two folders are repeatitive. So we need to delete the duplicated folder. The other two files resized.zip and artists.csv are very clean and don't need much preprocessing. 1
+ 
 
 ### Problematic
 
