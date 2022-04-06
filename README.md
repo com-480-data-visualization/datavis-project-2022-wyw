@@ -13,8 +13,8 @@
 ### Dataset
 
 The first dataset we choose to use is __Best Artworks of All Time__, which can be found in https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time. The dataset collects artworks of the 50 most influential painters of all time, and associated with the basic information of each artists retrieved from wikipedia. In detail, this collection contains 3 files:
-* __artists.csv__: A file contains basic information of the 50 most famous painter, including their names, years, gendres, nationnalities, bios, wikipedia links and paintings
-* __images.zip__: A file contains all paintings of each artists. All images are full size and divided in corresponding folders and sequentially numbered
+* __artists.csv__: The basic information of the 50 most famous painter, including their names, years, gendres, nationnalities, bios, wikipedia links and paintings
+* __images.zip__: The paintings of each artists. All images are full size and divided in corresponding folders and sequentially numbered
 * __resized.zip__: Same work with images.zip but images have been resized and extracted from folder structure. Images in this file have smaller size which allow us to process model faster
 
 In addition, we want to show some interesting features related with time, which are missing in the first dataset. So we find another dataset __Painter by Numbers__ as a complement, which can be found in https://www.kaggle.com/competitions/painter-by-numbers. This dataset collects 103250 paintings, including the artist name, creation year, genre, source, style, title and some data used for training model.
