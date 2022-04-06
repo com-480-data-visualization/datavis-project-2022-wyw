@@ -12,10 +12,12 @@
 
 ### Dataset
 
-The dataset we choose to use is Best Artworks of All Time, which can be found in https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time. The dataset collect artworks of the 50 most influential painters of all time, and associated with basic information of each artists retrieved from wikipedia. In detail, this collection contains 3 files:
-* artists.csv: A file contains basic information of the 50 most famous painter, including their names, years, gendres, nationnalities, bios, wikipedia links and paintings
-* images.zip: A file contains all paintings of each artists. All images are full size and divided in corresponding folders and sequentially numbered
-* resized.zip: Same work with images.zip but images have been resized and extracted from folder structure. Images in this file have smaller size which allow us to process model faster
+The first dataset we choose to use is Best Artworks of All Time, which can be found in https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time. The dataset collect artworks of the 50 most influential painters of all time, and associated with basic information of each artists retrieved from wikipedia. In detail, this collection contains 3 files:
+* __artists.csv__: A file contains basic information of the 50 most famous painter, including their names, years, gendres, nationnalities, bios, wikipedia links and paintings
+* __images.zip__: A file contains all paintings of each artists. All images are full size and divided in corresponding folders and sequentially numbered
+* __resized.zip__: Same work with images.zip but images have been resized and extracted from folder structure. Images in this file have smaller size which allow us to process model faster
+
+In addition, we want to show some transformation with time, 
 
 Considering the preprocessing, the image.zip contains 51 folders and we find two folders are repeatitive. So we need to delete the duplicated folder. The other two files resized.zip and artists.csv are very clean and don't need much preprocessing. 
 
@@ -25,11 +27,11 @@ Considering the preprocessing, the image.zip contains 51 folders and we find two
 Painting is an important form in the visual arts, it can be used to communicate ideas, create a sense of beauty, explore the nature of perception, or express strong emotions. By appreciating painting, we can enrich our spirituality, acquire knowledge and inspiration, discover a vivid history and so on. In conclusion, appreciating painting can be very helpful. However, many person are layman of art and don't know how to start the artistic journey. The motivation of this project is to give them basic knowledge of analyzing the artist and their work by exploring the implicit data inside the pictures.
 
 The main axis we want to develop in our visualization are stated as following:
-* The transformation of artist's painting gendre throughout his life: As artist always continue to learn or he may experience something meaningful, the paingting gendre of an artist may change, we want to visualize the transformation of each artists
-* The development of each painting gendre with time: With the innovation in techique and the change of perception, one gendre would develop from emergence to maturity, we want to show the development of each gendres
-* The special styles of artists in their paintings: By analyzing the colors used and the geometric patterns inside the pictures, we want to indentify the artist own special style and then speculate the corresponding painter of differnet pictures
-* The connections between different artists in same gendre: By exploring the common ground between differnet artists' paintings within the same gendre, we want to summarize their similarity and learn more about each gendre 
-* One picture in different gendres: By reconstructing images in the style of another gendre, we want to transfer a picture to any gendre we liked, or make pictures look more artistic by adding different filters
+* __The transformation of artist's painting gendre throughout his life__: As artist always continue to learn or he may experience something meaningful, the paingting gendre of an artist may change, we want to visualize the transformation of each artists
+* __The development of each painting gendre with time__: With the innovation in techique and the change of perception, one gendre would develop from emergence to maturity, we want to show the development of each gendres
+* __The special styles of artists in their paintings__: By analyzing the colors used and the geometric patterns inside the pictures, we want to indentify the artist own special style and then speculate the corresponding painter of differnet pictures
+* __The connections between different artists in same gendre__: By exploring the common ground between differnet artists' paintings within the same gendre, we want to summarize their similarity and learn more about each gendre 
+* __One picture in different gendres__: By reconstructing images in the style of another gendre, we want to transfer a picture to any gendre we liked, or make pictures look more artistic by adding different filters
 
 
 ### Exploratory Data Analysis
