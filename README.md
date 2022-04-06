@@ -24,7 +24,7 @@ Considering the preprocessing, the image.zip contains 51 folders and we find two
 
 ### Problematic
 
-Painting is an important form in the visual arts, it can be used to communicate ideas, create a sense of beauty, explore the nature of perception, or express strong emotions. By appreciating painting, we can enrich our spirituality, acquire knowledge and inspiration, discover a vivid history and so on. In conclusion, appreciating painting can be very helpful. However, many person are layman of art and don't know how to start the artistic journey. The motivation of this project is to give them basic knowledge of analyzing the artist and their work by exploring the implicit data inside the pictures.
+Painting is an important form in the visual arts, it can be used to communicate ideas, create a sense of beauty, explore the nature of perception, or express strong emotions. By appreciating painting, we can enrich our spirituality, acquire knowledge and inspiration, discover a vivid history and so on. In conclusion, appreciating painting can be very helpful. However, many person are layman of art and don't know how to start the artistic journey. The motivation of this project is to give them basic knowledge of some most famous artists and their work and explore the implicit data inside their paintings.
 
 The main axis we want to develop in our visualization are stated as following:
 * __The transformation of artist's painting gendre throughout his life__: As artist always continue to learn or he may experience something meaningful, the paingting gendre of an artist may change, we want to visualize the transformation of each artists
