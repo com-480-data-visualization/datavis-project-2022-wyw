@@ -29,19 +29,19 @@ Painting is an important form in the visual arts, it can be used to communicate 
 The main axis we want to develop in our visualization are stated as following:
 * __The transformation of artist's painting gendre throughout his life__
 
- As artist always continue to learn or he may experience something meaningful, the paingting gendre of an artist may change, we want to visualize the transformation of each artists
+    As artist always continue to learn or he may experience something meaningful, the paingting gendre of an artist may change, we want to visualize the transformation of each artists
 * __The development of each painting gendre with time__ 
 
- With the innovation in techique and the change of perception, one gendre would develop from emergence to maturity, we want to show the development of each gendres
+    With the innovation in techique and the change of perception, one gendre would develop from emergence to maturity, we want to show the development of each gendres
 * __The special styles of artists in their paintings__
 
- By analyzing the colors used and the geometric patterns inside the pictures, we want to indentify the artist own special style and then speculate the corresponding painter of differnet pictures
+    By analyzing the colors used and the geometric patterns inside the pictures, we want to indentify the artist own special style and then speculate the corresponding painter of differnet pictures
 * __The connections between different artists in same gendre__ 
 
- By exploring the common ground between differnet artists' paintings within the same gendre, we want to summarize their similarity and learn more about each gendre 
+    By exploring the common ground between differnet artists' paintings within the same gendre, we want to summarize their similarity and learn more about each gendre 
 * __One picture in different gendres__
  
- By reconstructing images in the style of another gendre, we want to transfer a picture to any gendre we liked, or make pictures look more artistic by adding different filters
+    By reconstructing images in the style of another gendre, we want to transfer a picture to any gendre we liked, or make pictures look more artistic by adding different filters
 
 
 ### Exploratory Data Analysis
