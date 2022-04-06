@@ -19,7 +19,7 @@ The first dataset we choose to use is __Best Artworks of All Time__, which can b
 
 In addition, we want to show some interesting features related with time, which are missing in the first dataset. So we find another dataset __Painter by Numbers__ as a complement, which can be found in https://www.kaggle.com/competitions/painter-by-numbers. This dataset collects 103250 paintings, including the artist name, creation year, genre, source, style, title and some data used for training model.
 
-Considering the preprocessing, at first we pick up the paingtings created by influential artists in __Painter by Numbers__ dataset according to information in  __Best Artworks of All Time__.
+Considering the preprocessing, we pick up the paingtings created by influential artists in __Painter by Numbers__ dataset according to information in  __Best Artworks of All Time__ and combine the useful information in two dataset into one new form. Because of the large scale of datasize, finally we choose 30 most famous artists and their work to show visualization. The detail of preprocessing can be seen in Exploratory Data Analysis.
  
 
 ### Problematic
