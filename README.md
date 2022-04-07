@@ -17,31 +17,31 @@ The first dataset we choose to use is __Best Artworks of All Time__, which can b
 * __images.zip__: The paintings of each artists. All images are full size and divided in corresponding folders and sequentially numbered
 * __resized.zip__: Same work with images.zip but images have been resized and extracted from folder structure. Images in this file have smaller size which allow us to process model faster
 
-In addition, we want to show some interesting features related with time, which are missing in the first dataset. So we find another dataset __Painter by Numbers__ as a complement, which can be found in https://www.kaggle.com/competitions/painter-by-numbers. This dataset collects 103250 paintings, including the artist name, creation year, genre, source, style, title and some data used for training model.
+In addition, we want to show some interesting features related with time, which are missing in the first dataset. So we use another dataset __Painter by Numbers__ as a complement, which can be found at https://www.kaggle.com/competitions/painter-by-numbers. This dataset collects 103250 paintings along with the artist name, creation year, genre, source, style, title and some data used for model training.
 
-Considering the preprocessing, we pick up the paingtings created by influential artists in __Painter by Numbers__ dataset according to information in  __Best Artworks of All Time__ and combine the useful information in two dataset into one new form. Because of the large scale of datasize, finally we choose 30 most famous artists and their work to show visualization. The detail of preprocessing can be seen in __Exploratory Data Analysis__.
+Considering the preprocessing, we pick the paintings in __Painter by Numbers__ dataset created by influential artists according to information in  __Best Artworks of All Time__ and combine the useful information in two datasets. For convenience, we focus on 30 influential artists with a large number of artworks in the dataset. The detail of preprocessing can be seen in __Exploratory Data Analysis__.
  
 
 ### Problematic
 
-Painting is an important form in the visual arts, it can be used to communicate ideas, create a sense of beauty, explore the nature of perception, or express strong emotions. By appreciating painting, we can enrich our spirituality, acquire knowledge and inspiration, discover a vivid history and so on. In conclusion, appreciating painting can be very helpful. However, many person are layman of art and don't know how to start the artistic journey. The motivation of this project is to give them basic knowledge of some most famous artists and their work and explore the implicit data inside their paintings.
+Painting is an important form of visual arts, it can be used to communicate ideas, create a sense of beauty, explore the nature of perception, or express strong emotions. By appreciating painting, we can enrich our spirituality, acquire knowledge and inspiration, discover a vivid history and so on. However, many people are laymen of art and don't know how to start the artistic journey. Our project aims to be a nice start point for people who are interested in art by providing an interactive space for people to learn and explore paintings in various styles from 30 famous artists.
 
 The main axis we want to develop in our visualization are stated as following:
-* __The transformation of artist's painting gendre throughout his life__
+* __The transformation of artist's painting style throughout his life__
 
-    As artist always continue to learn or he may experience something meaningful, the paingting gendre of an artist may change, we want to visualize the transformation of each artists
-* __The development of each painting gendre with time__ 
+    As an artist grows and matures as a painter and as a person, the painting style of an artist may change, we want to visualize that change for each artist.
+* __The development of painting style in time__ 
 
-    With the innovation in techique and the change of perception, one gendre would develop from emergence to maturity, we want to show the development of each gendres
+    With the innovation in techique and the change of perception, from emergence to maturity, a paticular painting style develops. And different painting styles emerged at different periods in time. We want to visualize how painting style developed throughout history. 
 * __The special styles of artists in their paintings__
 
-    By analyzing the colors used and the geometric patterns inside the pictures, we want to indentify the artist own special style and then speculate the corresponding painter of differnet pictures
-* __The connections between different artists in same gendre__ 
+    By analyzing the colors and the geometric patterns inside the pictures, we want to indentify the artist own special style and then speculate the corresponding painter of differnet picture.
+* __The connections between different artists in same genre__ 
 
-    By exploring the common ground between differnet artists' paintings within the same gendre, we want to summarize their similarity and learn more about each gendre 
-* __One picture in different gendres__
+    By exploring the common ground between differnet artists' paintings within the same genre, we want to summarize their similarity and learn more about each genre.
+* __One picture in different genres__
  
-    By reconstructing images in the style of another gendre, we want to transfer a picture to any gendre we liked, or make pictures look more artistic by adding different filters
+    By reconstructing images in the style of another image, we want to transfer a picture to the style of any painting we like.
 
 
 ### Exploratory Data Analysis
@@ -59,6 +59,8 @@ Please see [Data analysis](https://github.com/com-480-data-visualization/datavis
 1. Predicting Artist from Artwork
     * [WebApp](https://github.com/SupratimH/deepartist-web-application)
     * [Classification Model](https://github.com/raunit-x/Best-Artworks-of-All-Time)
+    * [Compare Two Images](https://www.kaggle.com/competitions/painter-by-numbers/data)
+    
 2. Analyzing Painters' Age
 
     [Data Visualization Focusing on Age](https://www.kaggle.com/code/nidaguler/data-visualization-best-artworks-of-all-time)
