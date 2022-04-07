@@ -49,7 +49,7 @@ The main axis we want to develop in our visualization are stated as following:
 > Pre-processing of the data set you chose
 > - Show some basic statistics and get insights about the data
 
-Please see [Data analysis](https://github.com/com-480-data-visualization/datavis-project-2022-wyw/blob/main/data_analysis.ipynb) for exploratory data analysis
+Please see [Data analysis](https://htmlpreview.github.io/?https://github.com/com-480-data-visualization/datavis-project-2022-wyw/blob/main/data_analysis.html) for exploratory data analysis
 
 ### Related work
 
