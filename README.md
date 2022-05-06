@@ -85,7 +85,7 @@ Please see [Data analysis](https://htmlpreview.github.io/?https://github.com/com
 
 ## Milestone 2 
 
-**10% of the final grade**
+[The initial website](https://com-480-data-visualization.github.io/datavis-project-2022-wyw/index.html)
 
 
 ## Milestone 3 
