@@ -94,7 +94,7 @@ Please see [Data analysis](https://htmlpreview.github.io/?https://github.com/com
 
 * Dataset containing all images: [dataset](https://drive.google.com/drive/folders/1-FwytrHYgW9fK5nR13vqfd82CtYhzZFO?usp=sharing)
 * Process book: [Process book](https://github.com/com-480-data-visualization/datavis-project-2022-wyw/blob/main/process_book.pdf)
-* Screencast: [film](https://drive.google.com/file/d/1lsy7IsOmxyWh2SaM08_WkbwOKgusHMdu/view?usp=sharing)
+* Screencast: [film](https://youtu.be/tdlI8T5oaxk)
 * Our website: [Best Artworks Of All Time](https://com-480-data-visualization.github.io/datavis-project-2022-wyw/index.html) To get the best performance, we recommand to use the Safari broswer.
 * Also you can find all the require file (process book and screencast) in google drive.
 
