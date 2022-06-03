@@ -275,7 +275,7 @@ function draw(data) {
         function getSelect() {
             let selectOptions = Array.from(document.querySelectorAll('select[name="selectOptions"] option:checked'));
             let selectChecked = {'Painters':[], 'Styles':[]};
-            console.log(selectOptions[0].parentNode.label);
+            /*console.log(selectOptions[0].parentNode.label);*/
             for (let i = 0; i < selectOptions.length; i++) {
                 if (selectOptions[i].parentNode.label == "Painters") {
                      selectChecked.Painters.push(selectOptions[i].value);
@@ -297,7 +297,7 @@ function draw(data) {
         let selectOptions = getSelect();
         console.log(selectOptions);
 
-        let newData = [];
+        let newData = reduced_data;
 
         if (selectOptions == null) {
             dataSet = newData;
