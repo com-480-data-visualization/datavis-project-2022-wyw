@@ -273,11 +273,11 @@ function draw(data) {
 
         function getSelect() {
             let selectOptions = Array.from(document.querySelectorAll('select[name="selectOptions"] option:checked'));
-            let selectChecked = {'Authors':[], 'Styles':[]};
+            let selectChecked = {'Painters':[], 'Styles':[]};
             console.log(selectOptions[0].parentNode.label);
             for (let i = 0; i < selectOptions.length; i++) {
-                if (selectOptions[i].parentNode.label == "Authors") {
-                     selectChecked.Authors.push(selectOptions[i].value);
+                if (selectOptions[i].parentNode.label == "Painters") {
+                     selectChecked.Painters.push(selectOptions[i].value);
                 }
 
                 if (selectOptions[i].parentNode.label == "Styles") {
@@ -285,7 +285,7 @@ function draw(data) {
                 }
             }
             console.log(selectChecked);
-            return (selectChecked.Authors.length > 0 || selectChecked.Styles.length > 0)  ? selectChecked : null;
+            return (selectChecked.Painters.length > 0 || selectChecked.Styles.length > 0)  ? selectChecked : null;
         }
 
         //var values = Array.from(document.querySelectorAll('select[name="selectOptions"] option:checked')).map(el => el.getAttribute('value'));
@@ -305,17 +305,17 @@ function draw(data) {
             return;
         }
 
-        if (selectOptions.Authors.length > 0){
-            for (let i = 0; i < selectOptions.Authors.length; i++){
+        if (selectOptions.Painters.length > 0){
+            for (let i = 0; i < selectOptions.Painters.length; i++){
                 let newArray = data.filter(function(d) {
-                    return d.name == selectOptions.Authors[i];
+                    return d.name == selectOptions.Painters[i];
                 });
                 Array.prototype.push.apply(newData, newArray);
             }
             dataSet = newData;
             console.log(dataSet);
-            if(selectOptions.Authors.length == 1){
-                showbio(selectOptions.Authors[0]);
+            if(selectOptions.Painters.length == 1){
+                showbio(selectOptions.Painters[0]);
             }else{showbio('');}
         }else{showbio('');}
 
