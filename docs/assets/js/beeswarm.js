@@ -297,10 +297,10 @@ function draw(data) {
         let selectOptions = getSelect();
         console.log(selectOptions);
 
-        let newData = reduced_data;
+        let newData = [];
 
         if (selectOptions == null) {
-            dataSet = newData;
+            dataSet = reduced_data;
             redraw();
             showbio('');
             return;
