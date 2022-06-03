@@ -5,7 +5,7 @@ AI style transferring
 */
 
 let inputImg, styleImg, style;
-let data = part_data;
+/*let data = part_data;*/
 
 var loadFile = function(event) {
 	var image = document.getElementById('output');
