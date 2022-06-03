@@ -92,7 +92,7 @@ Please see [Data analysis](https://htmlpreview.github.io/?https://github.com/com
 
 ## Milestone 3 
 
-Dataset: 
+* Dataset containing all images:
 
 
 ## Late policy
