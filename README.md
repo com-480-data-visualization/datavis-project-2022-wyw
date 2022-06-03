@@ -92,7 +92,7 @@ Please see [Data analysis](https://htmlpreview.github.io/?https://github.com/com
 
 ## Milestone 3 
 
-**80% of the final grade**
+Dataset: 
 
 
 ## Late policy
