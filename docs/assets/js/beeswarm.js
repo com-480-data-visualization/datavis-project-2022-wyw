@@ -70,8 +70,9 @@ function showbio(author){
     var link = document.querySelector("a");
     if (author==''){
         para.firstChild.data = ' ';
-        link.href='';
-        link.textContent = "";
+        document.getElementById('myLink').href=" ";   
+        document.getElementById("myLink").textContent = "";
+    
     }else{
         para.firstChild.data = author_bios[author].bio;
         document.getElementById('myLink').href=author_bios[author].wikipedia;   
