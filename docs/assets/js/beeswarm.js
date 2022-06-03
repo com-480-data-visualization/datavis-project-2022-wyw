@@ -297,16 +297,18 @@ function draw(data) {
         let selectOptions = getSelect();
         console.log(selectOptions);
 
-        let newData = [];
+    
 
         if (selectOptions == null) {
-            dataSet = reduced_data;
+            dataSet = data;
             redraw();
             showbio('');
             return;
         }
 
         if (selectOptions.Painters.length > 0){
+            let newData = [];
+
             for (let i = 0; i < selectOptions.Painters.length; i++){
                 let newArray = data.filter(function(d) {
                     return d.name == selectOptions.Painters[i];
@@ -321,9 +323,14 @@ function draw(data) {
         }else{showbio('');}
 
         if (selectOptions.Styles.length > 0){
-            let newData = [];
+            let filtered_data = data;
+            let newData= [];
+            if(selectOptions.Painters.length > 0){
+                filtered_data = dataSet;
+            }
+            
             for (let i = 0; i < selectOptions.Styles.length; i++){
-                let newArray = data.filter(function(d) {
+                let newArray = filtered_data.filter(function(d) {
                     return d.style === selectOptions.Styles[i];
                 });
                 Array.prototype.push.apply(newData, newArray);
