@@ -93,7 +93,16 @@ Please see [Data analysis](https://htmlpreview.github.io/?https://github.com/com
 ## Milestone 3 
 
 * Dataset containing all images:
+* Process book:
+* Screencast:
+* Our website:
 
+If you would like to run our project locally, please do the following:
+
+* git clone the repo
+* Move into the website folder
+* Load your site from a local webserver: python -m http.server
+* Open localhost: 8000 in the browser 
 
 ## Late policy
 
