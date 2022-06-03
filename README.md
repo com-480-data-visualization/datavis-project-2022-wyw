@@ -93,7 +93,7 @@ Please see [Data analysis](https://htmlpreview.github.io/?https://github.com/com
 ## Milestone 3 
 
 * Dataset containing all images:
-* Process book:
+* Process book: [Process book](https://github.com/com-480-data-visualization/datavis-project-2022-wyw/blob/main/process_book.pdf)
 * Screencast:
 * Our website:
 
