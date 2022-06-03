@@ -189,12 +189,12 @@ function draw(data) {
                                       else { return margin.bottom;}})*/
             .attr("r", 3)
             .style("opacity", 0)
-            .attr("fill", function(d){ return colors(d.style)})
+            .attr("fill", function(d){ return colors(d.style);})
             .merge(picturesCircles)
             .transition()
             .duration(1000)
-            .delay(function(d) { return Math.abs(xScale(+d[chartState.measure]) - ((width / 2) + margin.right / 2))*4;})
-            .attr("cy", function(d) { return height-margin.bottom-6*d['y']})
+            .delay(function(d) { return Math.abs(d3.select(this).attr("cx") - ((width / 2) + (margin.right / 2)))*4;})
+            .attr("cy", function(d) { return height-margin.bottom-6*d['y'];})
             .style("opacity", 0.95);
         
 
