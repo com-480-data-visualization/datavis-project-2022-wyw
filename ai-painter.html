@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Best Artworks of All Time</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta charset="utf-8">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-amber.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- Add icon library -->
+    <link rel="shortcut icon" href="#" />
+
+    <!-- Load @magenta/image -->
+    <script src="https://cdn.jsdelivr.net/npm/@magenta/image@^0.2.1"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="artworks.html">Artworks</a></li>
+                        <li><a href="authors.html">Authors</a></li>
+                        <li class="active"><a href="ai-painter.html">AI Style Transferring</a></li>
+                        <li><a href="#" id="playAudio">Music On</a></li>
+                        <audio id="testAudio" src="ClairdeLune.mp3" autoplay="autoplay" loop="loop"></audio>
+                    </ul>
+                </div>
+
+            </div>
+        </nav><!-- /.site-navigation -->
+    </header><!-- /#mastheaed -->
+
+    <div id="hero" class="ai-painter-hero-overlay ai-painter-hero">
+        <div class="ai-painter-hero-content">
+            <div class="hero-text">
+                <h1>AI Style Transferring</h1>
+                <p id='StyleText'>Create personized style artworks using the power of Artificial Intelligence.</p>
+            </div>
+
+
+            <section class="ai-painter-section">
+                <div class="container ai-painter-section-text-area">
+                    <div class="row">
+
+                           <div class="row">
+                              <div class="col-sm-6">
+                                <label for="contentFile">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewbox="0 0 20 17" style="background-color: transparent;">
+                                      <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path>
+                                    </svg>
+                                    <span>Pick your own photo </span>
+                                </label>
+                                <input type="file" id="contentFile" class="inputfile" onchange="loadFile(event)" data-multiple-caption="{count} files selected" multiple>
+                              </div>
+                              <div class="col-sm-6">
+                                <span>Select style</span>
+                              </div>
+                            </div>
+
+
+                            <div class='row'>
+                                <div class="col-sm-6">
+                                    <img id='output' src="assets/artwork/Vincent_van_Gogh_368.jpg" alt="" width="300" height="200" opacity=1.0>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <img id='selectStyle' src="assets/artwork/Solid_white_bordered.jpg" alt="" width="300" height="200" opacity=1.0>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="container ai-painter-section-text-area">
+                                <span>Mix Style</span>
+                            </div>
+
+                            <div class='row'>
+                                <div class="col-sm-6">
+                                    <canvas id="sty1" height="200" style="border:1px solid #000000; background-color: white;" ></canvas>
+                                </div>
+                                <div class="col-sm-6">
+                                    <canvas id="sty2" height="200" style="border:1px solid #000000; background-color: white;" ></canvas>
+                                </div>
+                            </div>
+
+
+                            <div class="container ai-painter-section-text-area">
+                                <span>Choose a Style</span>
+                            </div>
+
+                            <div class="ai-painter-section-gallery">
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Abstract_Art_Paul_Klee.jpg">
+                                  <img src="assets/artwork/ArtStyles/Abstract_Art_Paul_Klee.jpg" id="Abstract Art" alt="" width="600" height="400"  onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Abstract Art</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Abstract_Expressionism_Henri_Matisse.jpg">
+                                  <img src="assets/artwork/ArtStyles/Abstract_Expressionism_Henri_Matisse.jpg" id="Abstract Expressionism" alt="" width="600" height="400"  onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Abstract Expressionism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Analytical_Cubism_Pablo_Picasso.jpg">
+                                  <img src="assets/artwork/ArtStyles/Analytical_Cubism_Pablo_Picasso.jpg" id="Analytical Cubism" alt="" width="600" height="400"  onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Analytical Cubism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Art_Deco_Rene_Magritte.jpg">
+                                  <img src="assets/artwork/ArtStyles/Art_Deco_Rene_Magritte.jpg" id="Art Deco" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Art Deco</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Art_Nouveau_Modern_Henri_de_Toulouse_Lautrec.jpg">
+                                  <img src="assets/artwork/ArtStyles/Art_Nouveau_Modern_Henri_de_Toulouse_Lautrec.jpg" id="Art Nouveau (Modern)" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Art Nouveau </div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Automatic_Painting_Joan_Miro.jpg">
+                                  <img src="assets/artwork/ArtStyles/Automatic_Painting_Joan_Miro.jpg" id="Automatic Painting" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Automatic Painting</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Baroque_Peter_Paul_Rubens.jpg">
+                                  <img src="assets/artwork/ArtStyles/Baroque_Peter_Paul_Rubens.jpg" id="Baroque" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Baroque</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Cloisonnism_Paul_Gauguin.jpg">
+                                  <img src="assets/artwork/ArtStyles/Cloisonnism_Paul_Gauguin.jpg" id="Cloisonnism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Cloisonnism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Color_Field_Painting_Henri_Matisse.jpg">
+                                  <img src="assets/artwork/ArtStyles/Color_Field_Painting_Henri_Matisse.jpg" id="Color Field Painting" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Color Field Painting</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Cubism_Henri_Matisse.jpg">
+                                  <img src="assets/artwork/ArtStyles/Cubism_Henri_Matisse.jpg" id="Cubism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Cubism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Divisionism_Henri_Matisse.jpg">
+                                  <img src="assets/artwork/ArtStyles/Divisionism_Henri_Matisse.jpg" id="Divisionism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Divisionism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Early_Renaissance_Leonardo_da_Vinci.jpg">
+                                  <img src="assets/artwork/ArtStyles/Early_Renaissance_Leonardo_da_Vinci.jpg" id="Early Renaissance" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Early Renaissanc</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Expressionism_Amedeo_Modigliani.jpg">
+                                  <img src="assets/artwork/ArtStyles/Expressionism_Amedeo_Modigliani.jpg" id="Expressionism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Expressionism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Fauvism_Joan_Miro.jpg">
+                                  <img src="assets/artwork/ArtStyles/Fauvism_Joan_Miro.jpg" id="Fauvism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Fauvism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/High_Renaissance_Leonardo_da_Vinci.jpg">
+                                  <img src="assets/artwork/ArtStyles/High_Renaissance_Leonardo_da_Vinci.jpg" id="High Renaissance" alt="Eugene_Delacroix_30" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">High Renaissance</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Impressionism_Alfred_Sisley.jpg">
+                                  <img src="assets/artwork/ArtStyles/Impressionism_Alfred_Sisley.jpg" id="Impressionism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Impressionism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Japonism_Edgar_Degas.jpg">
+                                  <img src="assets/artwork/ArtStyles/Japonism_Edgar_Degas.jpg" id="Japonism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Japonism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Mannerism_Late_Renaissance_Titian.jpg">
+                                  <img src="assets/artwork/ArtStyles/Mannerism_Late_Renaissance_Titian.jpg" id="Mannerism (Late Renaissance)" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Late Renaissance</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Naïve_Art_Primitivism_Marc_Chagall.jpg">
+                                  <img src="assets/artwork/ArtStyles/Naive_Art_Primitivism_Marc_Chagall.jpg" id="Naïve Art (Primitivism)" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Primitivism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Neoclassicism_Salvador_Dali.jpg">
+                                  <img src="assets/artwork/ArtStyles/Neoclassicism_Salvador_Dali.jpg" id="Neoclassicism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Neoclassicism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Northern_Renaissance_Hieronymus_Bosch.jpg">
+                                  <img src="assets/artwork/ArtStyles/Northern_Renaissance_Hieronymus_Bosch.jpg" id="Northern Renaissance" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Northern Renaissance</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Orientalism_Eugene_Delacroix.jpg">
+                                  <img src="assets/artwork/ArtStyles/Orientalism_Eugene_Delacroix.jpg" alt="" id="Orientalism" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Orientalism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Pointillism_Camille_Pissarro.jpg">
+                                  <img src="assets/artwork/ArtStyles/Pointillism_Camille_Pissarro.jpg" id="Pointillism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Pointillism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Pop_Art_Andy_Warhol.jpg">
+                                  <img src="assets/artwork/ArtStyles/Pop_Art_Andy_Warhol.jpg" id="Pop Art" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Pop Art</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Post-Impressionism_Vincent_Van_Gogh.jpg">
+                                  <img src="assets/artwork/ArtStyles/Post-Impressionism_Vincent_Van_Gogh.jpg" id="Post-Impressionism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Post-Impressionism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Realism_Claude_Monet.jpg">
+                                  <img src="assets/artwork/ArtStyles/Realism_Claude_Monet.jpg" id="Realism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Realism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Romanticism_Francisco_Goya.jpg">
+                                  <img src="assets/artwork/ArtStyles/Romanticism_Francisco_Goya.jpg" id="Romanticism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Romanticism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Surrealism_Pablo_Picasso.jpg">
+                                  <img src="assets/artwork/ArtStyles/Surrealism_Pablo_Picasso.jpg" id="Surrealism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Surrealism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Symbolism_Edvard_Munch.jpg">
+                                  <img src="assets/artwork/ArtStyles/Symbolism_Edvard_Munch.jpg" id="Symbolism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Symbolism</div>
+                              </div>
+                              <div class="gallery">
+                                <a target="_blank" href="assets/artwork/ArtStyles/Synthetic_Cubism_Pablo_Picasso.jpg">
+                                  <img src="assets/artwork/ArtStyles/Synthetic_Cubism_Pablo_Picasso.jpg" id="Synthetic Cubism" alt="" width="600" height="400" onclick="updateStyle(this)"/>
+                                </a>
+                                <div class="desc">Synthetic Cubism</div>
+                              </div>
+
+                            </div>
+                      </div>
+
+                </div>
+                <form>
+                    <div class="container ai-painter-section-text-area">
+                        <button class="btn btn-border" onclick="styleTransfer(this);" type="button" id='create_button'>Create</button>
+                    </div>
+
+                    <div class="container ai-painter-section-text-area">
+                        <span>Stylized Image</span>
+                    </div>
+
+                    <div class="ai-painter-section-text-area">
+                        <canvas id="stylized" height="200" style="border:1px solid #000000; background-color: white;" ></canvas>
+                        <div>
+                          <a id="download" download="myImage.jpg" href="" onclick="download_img(this);">Download</a>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src = "assets/js/authors.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src = "assets/js/part_data.js"></script>
+    <script src="assets/js/ai_painter.js"></script>
+
+</body>
+</html>
